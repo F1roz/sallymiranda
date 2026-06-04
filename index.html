@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sally Miranda | Mortgage Loan Officer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="brand-name">SALLY MIRANDA</span>
+        <span class="brand-sep">|</span>
+        <span class="brand-sub">MORTGAGE</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#programs">LOAN PROGRAMS</a></li>
+        <li><a href="#qualify">QUALIFY NOW</a></li>
+        <li><a href="#about">ABOUT SALLY</a></li>
+        <li><a href="#rates">MORTGAGE RATES</a></li>
+        <li><a href="#contact">LET'S CONNECT</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="tel:7607043387" class="nav-phone">760.704.3387</a>
+        <button class="burger" id="burgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+      <ul>
+        <li><a href="#programs" class="drawer-link">LOAN PROGRAMS</a></li>
+        <li><a href="#qualify" class="drawer-link">QUALIFY NOW</a></li>
+        <li><a href="#about" class="drawer-link">ABOUT SALLY</a></li>
+        <li><a href="#rates" class="drawer-link">MORTGAGE RATES</a></li>
+        <li><a href="#contact" class="drawer-link">LET'S CONNECT</a></li>
+      </ul>
+      <a href="tel:7607043387" class="drawer-phone">760.704.3387</a>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+  </nav>
+
+
+  <!-- ============================================================
+       SECTION 1: HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="pic2.png" alt="Luxury Estate Aerial View" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">ELITE MORTGAGE LENDING</p>
+      <h1 class="hero-title">SALLY<br/>MIRANDA</h1>
+      <div class="hero-title-rule"></div>
+      <p class="hero-tagline">Customized Loan Solutions Across<br/>CA &nbsp;·&nbsp; TX &nbsp;·&nbsp; CO &nbsp;·&nbsp; NV</p>
+
+      <!-- <div class="hero-search-bar">
+        <input
+          type="text"
+          placeholder="Enter Target Purchase Price or Zip Code to Explore Rates"
+          class="hero-input"
+          aria-label="Purchase price or zip code"
+        />
+        <button class="hero-btn">GET STARTED</button>
+      </div> -->
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">SCROLL</span>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2: THREE-COLUMN LOAN GRID
+  ============================================================ -->
+  <section class="loan-grid" id="programs">
+    <div class="loan-grid-inner">
+
+      <div class="loan-col reveal">
+        <div class="loan-img-wrap">
+          <img src="pic2.png" alt="Modern Luxury Estate — Jumbo & Conventional Loans" class="loan-img" />
+          <div class="loan-overlay"></div>
+        </div>
+        <div class="loan-caption">
+          <span class="loan-num">01</span>
+          <h3 class="loan-title">JUMBO &amp;<br/>CONVENTIONAL</h3>
+          <p class="loan-sub">Tailored financing for high-value properties with competitive rates and flexible structures.</p>
+          <a href="#qualify" class="loan-cta">EXPLORE &rarr;</a>
+        </div>
+      </div>
+
+      <div class="loan-col reveal" style="--delay: 0.15s">
+        <div class="loan-img-wrap">
+          <img src="pic2.png" alt="Suburban Dream Home — Zero Down FHA VA Loans" class="loan-img" />
+          <div class="loan-overlay"></div>
+        </div>
+        <div class="loan-caption">
+          <span class="loan-num">02</span>
+          <h3 class="loan-title">ZERO DOWN &amp;<br/>FHA / VA</h3>
+          <p class="loan-sub">Accessible pathways to homeownership with government-backed and low-barrier programs.</p>
+          <a href="#qualify" class="loan-cta">EXPLORE &rarr;</a>
+        </div>
+      </div>
+
+      <div class="loan-col reveal" style="--delay: 0.3s">
+        <div class="loan-img-wrap">
+          <img src="pic2.png" alt="Executive Home Office — Pre-Approval Portal" class="loan-img" />
+          <div class="loan-overlay"></div>
+        </div>
+        <div class="loan-caption">
+          <span class="loan-num">03</span>
+          <h3 class="loan-title">PRE-APPROVAL<br/>PORTAL</h3>
+          <p class="loan-sub">Receive a decisive pre-approval in hours, not days — giving you the edge in any market.</p>
+          <a href="#qualify" class="loan-cta">EXPLORE &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 3: BIOGRAPHIC PROFILE
+  ============================================================ -->
+  <section class="bio-section" id="about">
+    <div class="bio-inner">
+
+      <div class="bio-left reveal">
+        <div class="bio-portrait-frame">
+          <img src="pic2.png" alt="Sally Miranda — Senior Mortgage Loan Officer" class="bio-portrait" />
+          <div class="bio-portrait-accent"></div>
+        </div>
+      </div>
+
+      <div class="bio-right reveal" style="--delay: 0.2s">
+        <p class="bio-eyebrow">YOUR LENDING ADVOCATE</p>
+        <h2 class="bio-name">Sally Miranda</h2>
+        <p class="bio-title-role">Mortgage Loan Officer</p>
+        <div class="bio-rule"></div>
+
+        <p class="bio-body">
+          With over <strong>30 years of dedicated experience</strong> in mortgage lending, Sally Miranda has built a reputation as one of the most trusted and results-driven loan officers in the West. Her approach is anything but transactional — Sally immerses herself in the financial architecture of each client's life, crafting loan solutions that align precisely with long-term wealth goals.
+        </p>
+        <p class="bio-body">
+          From complex Jumbo structures to first-time buyer programs, Sally has guided thousands of clients across California, Texas, Colorado, and Nevada through some of the most consequential financial decisions of their lives. Her deep knowledge of lender overlays, contract nuances, and rate strategy consistently delivers outcomes that other lenders can't match.
+        </p>
+        <p class="bio-body">
+          <em>"Every client deserves a loan that works for their life — not just their credit score."</em>
+        </p>
+
+        <div class="bio-bottom">
+          <div class="bio-social">
+            <a href="https://www.instagram.com/sallymiraculous/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="tel:7607043387" class="social-icon" aria-label="Phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.1 6.1l.95-.95a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+            <a href="mailto:sally@example.com" class="social-icon" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sallymiranda" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+          <a href="#about" class="bio-learn-more">— LEARN MORE ABOUT MY PROCESS</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 4: TESTIMONIAL CAROUSEL
+  ============================================================ -->
+  <section class="testimonial-section" id="rates">
+    <div class="testimonial-bg">
+      <img src="placeholders/testimonial-bg.jpg" alt="Grand Estate Architecture — Client Success" class="testimonial-bg-img" />
+      <div class="testimonial-overlay"></div>
+    </div>
+
+    <div class="testimonial-inner">
+      <div class="testimonial-quote-icon reveal">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="6" y="52" font-family="Georgia, serif" font-size="72" fill="white" opacity="0.9">"</text>
+        </svg>
+      </div>
+
+      <div class="testimonial-content reveal" style="--delay: 0.2s">
+        <div class="testimonial-slides">
+
+          <div class="testimonial-slide active" id="slide-1">
+            <p class="testimonial-text">
+              Sally structured our Jumbo loan perfectly when other lenders said it couldn't be done. Her expertise in complex financial structures and her relentless advocacy for our family made all the difference.
+            </p>
+            <div class="testimonial-attribution">
+              <span class="attr-name">— James &amp; Lauren Whitfield</span>
+              <span class="attr-detail">Jumbo Loan · Newport Beach, CA</span>
+            </div>
+          </div>
+
+          <div class="testimonial-slide" id="slide-2">
+            <p class="testimonial-text">
+              As a veteran, I wasn't sure I qualified for anything meaningful. Sally walked me through the VA loan process with patience, professionalism, and genuine care. We closed in 28 days.
+            </p>
+            <div class="testimonial-attribution">
+              <span class="attr-name">— Marcus T.</span>
+              <span class="attr-detail">VA Loan · San Antonio, TX</span>
+            </div>
+          </div>
+
+          <div class="testimonial-slide" id="slide-3">
+            <p class="testimonial-text">
+              Sally's zero-down program gave us a path to homeownership we thought was years away. She found the right program, handled every detail, and made us feel like her only clients.
+            </p>
+            <div class="testimonial-attribution">
+              <span class="attr-name">— Sofia &amp; Daniel Reyes</span>
+              <span class="attr-detail">Zero Down Program · Denver, CO</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testimonial-controls">
+          <div class="testimonial-pagination" id="testimonialPagination">
+            <span class="page-current">01</span>
+            <span class="page-sep">/</span>
+            <span class="page-total">03</span>
+          </div>
+          <div class="testimonial-arrows">
+            <button class="t-arrow t-prev" id="tPrev" aria-label="Previous testimonial">&#8592;</button>
+            <button class="t-arrow t-next" id="tNext" aria-label="Next testimonial">&#8594;</button>
+          </div>
+          <a href="#contact" class="testimonial-cta-btn">VIEW TESTIMONIALS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 5: GEOGRAPHIC FOOTPRINT BANNER
+  ============================================================ -->
+  <section class="geo-banner">
+    <div class="geo-banner-inner reveal">
+      <div class="geo-rule-left"></div>
+      <h2 class="geo-heading">
+        PROUDLY SERVING<br/>
+        <span>CALIFORNIA &nbsp;·&nbsp; TEXAS &nbsp;·&nbsp; COLORADO &nbsp;·&nbsp; NEVADA</span>
+      </h2>
+      <div class="geo-rule-right"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 6: PRE-QUALIFICATION FORM
+  ============================================================ -->
+  <section class="qualify-section" id="qualify">
+    <div class="qualify-inner">
+
+      <!-- Left: Emerald Block with Form -->
+      <div class="qualify-form-block reveal">
+        <div class="qualify-form-content">
+          <p class="qualify-eyebrow">START YOUR JOURNEY</p>
+          <h2 class="qualify-heading">GET<br/>PRE-QUALIFIED<br/>TODAY</h2>
+          <p class="qualify-subtext">
+            Receive a thorough loan evaluation within hours. Sally personally reviews every application to ensure you receive the program that's right for you — not just the one that's easiest to approve.
+          </p>
+
+          <form class="qualify-form" id="qualifyForm" novalidate>
+            <div class="form-group">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Your Full Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="(000) 000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="loanType" class="form-label">Loan Interest</label>
+              <select id="loanType" name="loanType" class="form-input form-select">
+                <option value="" disabled selected>Select a Loan Program</option>
+                <option>Zero Down</option>
+                <option>FHA Loan</option>
+                <option>VA Loan</option>
+                <option>Conventional</option>
+                <option>Jumbo Loan</option>
+              </select>
+            </div>
+
+            <label class="form-checkbox-label">
+              <input type="checkbox" id="consent" name="consent" required class="form-checkbox" />
+              <span class="form-checkbox-text">
+                I consent to be contacted by Sally Miranda (NMLS #000000) regarding mortgage products. Message &amp; data rates may apply. Review our <a href="#" class="form-link">Privacy Policy</a>.
+              </span>
+            </label>
+
+            <button type="submit" class="qualify-submit-btn">SUBMIT REQUEST</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Portrait Image -->
+      <div class="qualify-portrait-block reveal" style="--delay: 0.2s">
+        <img src="pic2.png" alt="Sally Miranda — Mortgage Consultation" class="qualify-portrait-img" />
+        <div class="qualify-portrait-badge">
+          <span class="badge-num">30+</span>
+          <span class="badge-text">Years of<br/>Excellence</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 7: FOOTER
+  ============================================================ -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+
+      <!-- Top Row -->
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <p class="footer-brand-name">SALLY MIRANDA</p>
+          <p class="footer-brand-sub">MORTGAGE LOAN OFFICER</p>
+          <p class="footer-brand-tagline">Serving Elite Clients Across the West</p>
+          <a href="tel:7607043387" class="footer-phone-link">760.704.3387</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">LICENSING</h4>
+          <p class="footer-col-text">NMLS # 000000</p>
+          <p class="footer-col-text">CA DRE # 00000000</p>
+          <p class="footer-col-text">TX SML License # 000000</p>
+          <p class="footer-col-text">CO MLO License # 000000</p>
+          <p class="footer-col-text">NV MBL License # 000000</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">PROGRAMS</h4>
+          <a href="#programs" class="footer-col-link">Zero Down Loans</a>
+          <a href="#programs" class="footer-col-link">FHA Loans</a>
+          <a href="#programs" class="footer-col-link">VA Loans</a>
+          <a href="#programs" class="footer-col-link">Conventional Loans</a>
+          <a href="#programs" class="footer-col-link">Jumbo Loans</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-heading">CONTACT</h4>
+          <p class="footer-col-text">Sally Miranda</p>
+          <p class="footer-col-text">Mortgage Loan Officer</p>
+          <a href="tel:7607043387" class="footer-col-link">760.704.3387</a>
+          <a href="mailto:sally@example.com" class="footer-col-link">sally@example.com</a>
+          <p class="footer-col-text footer-address">123 Elite Boulevard, Suite 200<br/>Palm Springs, CA 92262</p>
+        </div>
+      </div>
+
+      <!-- Middle Row: Nav + Social -->
+      <div class="footer-mid">
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#programs">Loan Programs</a>
+          <a href="#qualify">Pre-Qualify</a>
+          <a href="#about">About</a>
+          <a href="#rates">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/sallymiraculous/" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sallymiranda" target="_blank" rel="noopener" class="footer-social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="tel:7607043387" class="footer-social-icon" aria-label="Call Sally">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.1 6.1l.95-.95a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a href="mailto:sally@example.com" class="footer-social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Legal -->
+      <div class="footer-bottom">
+        <div class="footer-eho">
+          <img src="pic1.png" alt="Equal Housing Opportunity" class="eho-icon" />
+          <img src="placeholders/ehl-icon.png" alt="Equal Housing Lender" class="eho-icon" />
+        </div>
+        <p class="footer-legal">
+          © 2025 Sally Miranda. All Rights Reserved. NMLS Consumer Access: <a href="https://www.nmlsconsumeraccess.org" target="_blank" rel="noopener" class="footer-legal-link">www.nmlsconsumeraccess.org</a>. Sally Miranda (NMLS #000000) is a licensed Mortgage Loan Officer. Licensed by the California Department of Real Estate (CA DRE #00000000); Licensed by the Texas Department of Savings and Mortgage Lending (TX SML #000000); Licensed by the Colorado Division of Real Estate (CO MLO #000000); Licensed by the Nevada Division of Mortgage Lending (NV MBL #000000). This is not a commitment to lend. Loan approval is subject to credit review, property appraisal, underwriting conditions, and lender requirements. Interest rates and loan programs are subject to change without notice. Equal Housing Lender. Equal Housing Opportunity. All loan products are not available in all states.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       FLOATING APPLY NOW TAB
+  ============================================================ -->
+  <a href="#qualify" class="float-apply" id="floatApply" aria-label="Apply Now">
+    <span class="float-arrow">&#8679;</span>
+    <span class="float-text">APPLY NOW</span>
+  </a>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    /* ---- Sticky Nav ---- */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ---- Mobile Burger ---- */
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const drawerClose = document.getElementById('drawerClose');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function openDrawer() {
+      mobileDrawer.classList.add('open');
+      drawerOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      mobileDrawer.classList.remove('open');
+      drawerOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    burgerBtn.addEventListener('click', openDrawer);
+    drawerClose.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+    drawerLinks.forEach(l => l.addEventListener('click', closeDrawer));
+
+    /* ---- Scroll Reveal ---- */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.style.getPropertyValue('--delay') || '0s';
+          entry.target.style.transitionDelay = delay;
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ---- Testimonial Carousel ---- */
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const pageCurrent = document.querySelector('.page-current');
+    let currentSlide = 0;
+
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (index + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      pageCurrent.textContent = String(currentSlide + 1).padStart(2, '0');
+    }
+
+    document.getElementById('tNext').addEventListener('click', () => goToSlide(currentSlide + 1));
+    document.getElementById('tPrev').addEventListener('click', () => goToSlide(currentSlide - 1));
+
+    // Auto-advance
+    let autoSlide = setInterval(() => goToSlide(currentSlide + 1), 6000);
+    document.querySelector('.testimonial-section').addEventListener('mouseenter', () => clearInterval(autoSlide));
+    document.querySelector('.testimonial-section').addEventListener('mouseleave', () => {
+      autoSlide = setInterval(() => goToSlide(currentSlide + 1), 6000);
+    });
+
+    /* ---- Form Submit ---- */
+    document.getElementById('qualifyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.qualify-submit-btn');
+      btn.textContent = 'REQUEST SENT ✓';
+      btn.style.background = '#D4AF37';
+      btn.style.color = '#062616';
+      setTimeout(() => {
+        btn.textContent = 'SUBMIT REQUEST';
+        btn.style.background = '';
+        btn.style.color = '';
+        this.reset();
+      }, 3500);
+    });
+
+    /* ---- Float Tab show on scroll ---- */
+    const floatApply = document.getElementById('floatApply');
+    window.addEventListener('scroll', () => {
+      floatApply.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    /* ---- Smooth scroll for anchor links ---- */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
