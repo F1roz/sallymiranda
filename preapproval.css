@@ -829,3 +829,93 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .float-text { writing-mode: horizontal-tb; }
   .float-arrow { transform: none; }
 }
+/* ============================================================
+   NAV DROPDOWN — LOAN PROGRAMS HOVER MENU
+   ============================================================ */
+   .nav-dropdown {
+    position: relative;
+  }
+  
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 300px;
+    background: var(--white);
+    border-top: 2px solid var(--gold);
+    box-shadow: 0 20px 60px rgba(6, 38, 22, 0.18);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+    padding-top: 18px;
+  }
+  
+  .nav-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--gold);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  .nav-dropdown:hover .nav-dropdown-menu {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--neutral-mid);
+    transition: background 0.2s ease, padding-left 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .nav-dropdown-item:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-dropdown-item:hover {
+    background: var(--neutral-warm);
+    padding-left: 30px;
+  }
+  
+  .dropdown-num {
+    font-family: var(--ff-body);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  
+  .dropdown-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .dropdown-text strong {
+    font-family: var(--ff-serif);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--emerald-deep);
+    letter-spacing: 0.02em;
+  }
+  
+  .dropdown-text em {
+    font-family: var(--ff-body);
+    font-style: normal;
+    font-size: 0.72rem;
+    color: var(--charcoal-dim);
+    letter-spacing: 0.03em;
+  }
