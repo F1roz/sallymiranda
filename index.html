@@ -115,7 +115,7 @@
           <span class="loan-num">02</span>
           <h3 class="loan-title">ZERO DOWN &amp;<br/>FHA / VA</h3>
           <p class="loan-sub">Accessible pathways to homeownership with government-backed and low-barrier programs.</p>
-          <a href="#qualify" class="loan-cta">EXPLORE &rarr;</a>
+          <a href="zerodown.html" class="loan-cta">EXPLORE &rarr;</a>
         </div>
       </div>
 
@@ -286,7 +286,13 @@
             Receive a thorough loan evaluation within hours. Sally personally reviews every application to ensure you receive the program that's right for you — not just the one that's easiest to approve.
           </p>
 
-          <form class="qualify-form" id="qualifyForm" novalidate>
+          <!-- <form class="qualify-form" id="qualifyForm" novalidate> -->
+            <form class="qualify-form" id="qualifyForm" action="https://formsubmit.co/firozfahimm@gmail.com" method="POST" novalidate>
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="New Pre-Qualification Request"> <!--added-->
+
             <div class="form-group">
               <label for="fullName" class="form-label">Full Name</label>
               <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Your Full Name" required />
@@ -502,6 +508,7 @@
     /* ---- Form Submit ---- */
     document.getElementById('qualifyForm').addEventListener('submit', function(e) {
       e.preventDefault();
+      this.submit();
       const btn = this.querySelector('.qualify-submit-btn');
       btn.textContent = 'REQUEST SENT ✓';
       btn.style.background = '#D4AF37';
